@@ -11,7 +11,7 @@
 
 .input{
   text-align: center;
-  margin: 10rem 10rem 1rem; /*root element font size*/
+  margin: 10rem auto 10px; /*root element font size*/
 }
 
 input[type="text"]{
