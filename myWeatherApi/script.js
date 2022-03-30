@@ -11,7 +11,7 @@ submitButton.addEventListener('click', () => {
   .then(data => {
 
     const nameValue = document.createTextNode(data['name']);
-    const tempValue = document.createTextNode(data['main']['temp']);
+    const tempValue = document.createTextNode(Math.round(data['main']['temp']-273.15));
     const descValue = document.createTextNode(data['weather'][0]['description']);
 
     cityName.appendChild(nameValue);
